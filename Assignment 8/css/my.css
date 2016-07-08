@@ -66,13 +66,13 @@ section.information aside
 }
 
 /* This modifies how th sections in the information sections are displayed */
-section.information aside
+section.information th
 {
     background-color: lime;
 }
 
 /* This modifies how td sections in the information sections are displayed */
-section.information aside
+section.information td
 {
     background-color: yellow;
 }
