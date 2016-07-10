@@ -3,12 +3,16 @@
 /* This modifies how the body is displayed */
 body
 {
+    width: 95%;
+    max-width: 1200px;
+    margin: 15px;
     font: 150% "Times New Roman", serif;
 }
 
 /* This modifies how the headers are displayed */
 header
 {
+    background-color: royalblue;
     text-align: center;
     font-variant: small-caps;
 }
@@ -17,18 +21,23 @@ header
 nav
 {
     text-align: center;
+    margin-bottom: 15px;
 }
 
 /* This modifies how the unordered lists in the nav sections are displayed */
 nav ul
 {
     font-variant: small-caps;
+    list-style-type: none;
+    margin: 0px;
 }
 
 /* This modifies how the lists in the nav ul sections are displayed */
 nav ul li
 {
     font-weight: bold;
+    display: inline;
+    margin: 0px 10px;
 }
 
 /* This modifies how the anchors in the nav ul li sections are displayed */
@@ -49,7 +58,7 @@ nav ul li a:hover
 /* This modifies how information sections are displayed */
 section.information
 {
-    background-color: #efefef;
+    padding: 0px 10px;
 }
 
 /* This modifies how h1 in information sections are displayed */
@@ -57,6 +66,8 @@ section.information h1
 {
     color: rgb(0, 0, 255);
     font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 /* This modifies how aside sections in the information sections are displayed */
@@ -77,10 +88,57 @@ section.information td
     background-color: yellow;
 }
 
+/* This modifies how it looks when hovering the td sections */
+section.information td:hover
+{
+    background-color: red;
+}
+
+/* This modifies the first sections of each page */
+#aboutMe, #quotes, #schedule
+{
+    width: 60%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+/* This modifies the second sections of each page */
+#education, #htmlExample, #links
+{
+    width: 28%;
+    margin-left: 62%;
+}
+
+/* This modifies the third sections of each page */
+#recreation, #videos
+{
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    clear: both;
+    background-color: #ececec;
+}
+
+/* This modifiers how the videos are displayed */
+#videos
+{
+    text-align: center;
+}
+
+
+/* This modifies how the images are displayed */
+img
+{
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+}
+
 /* This modifies how footers are displayed */
 footer
 {
     text-align: center;
     color: red;
     font-size: 85%;
+    clear: both;
+    padding-top: 25px;
 }
