@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* This modifies how the body is displayed */
+body
+{
+    font: 150% "Times New Roman", serif;
+}
+
+/* This modifies how the headers are displayed */
+header
+{
+    text-align: center;
+    font-variant: small-caps;
+}
+
+/* This modifies how the nav sections are displayed */
+nav
+{
+    text-align: center;
+}
+
+/* This modifies how the unordered lists in the nav sections are displayed */
+nav ul
+{
+    font-variant: small-caps;
+}
+
+/* This modifies how the lists in the nav ul sections are displayed */
+nav ul li
+{
+    font-weight: bold;
+}
+
+/* This modifies how the anchors in the nav ul li sections are displayed */
+nav ul li a
+{
+    text-decoration: none;
+}
+
+/* This modifies how hovering over links are displayed */
+nav ul li a:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: red;
+    color: yellow;
+}
+
+/* This modifies how information sections are displayed */
+section.information
+{
+    background-color: #efefef;
+}
+
+/* This modifies how h1 in information sections are displayed */
+section.information h1
+{
+    color: rgb(0, 0, 255);
+    font-style: italic;
+}
+
+/* This modifies how aside sections in the information sections are displayed */
+section.information aside
+{
+    background-color: silver;
+}
+
+/* This modifies how th sections in the information sections are displayed */
+section.information th
+{
+    background-color: lime;
+}
+
+/* This modifies how td sections in the information sections are displayed */
+section.information td
+{
+    background-color: yellow;
+}
+
+/* This modifies how footers are displayed */
+footer
+{
+    text-align: center;
+    color: red;
+    font-size: 85%;
+}
