@@ -3,6 +3,7 @@
 /* This modifies how the body is displayed */
 body
 {
+    background-image: url("../Images/Me.jpg");
     font: 150% "Times New Roman", serif;
 }
 
@@ -49,7 +50,7 @@ nav ul li a:hover
 /* This modifies how information sections are displayed */
 section.information
 {
-    background-color: #efefef;
+    /*background-color: #efefef;*/
 }
 
 /* This modifies how h1 in information sections are displayed */
