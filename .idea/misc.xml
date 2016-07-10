@@ -55,7 +55,7 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" assert-keyword="false" jdk-15="false" project-jdk-name="Perl v5.24.0 (MSWin32-x64-multi-thread) (2)" project-jdk-type="Perl5 Interpreter">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" assert-keyword="false" jdk-15="false" project-jdk-name="Perl v5.14.2 (MSWin32-x86-multi-thread)" project-jdk-type="Perl5 Interpreter">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

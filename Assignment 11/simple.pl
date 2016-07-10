@@ -1,11 +1,14 @@
-#!/Perl64/bin/perl
+#!/usr/bin/perl
+use Modern::perl;
 use strict;
 use warnings FATAL => 'all';
-print "Marcus Mallum\n";
-print "mmmallum\n";
-print "Computer Science/Computer Engineering\n";
-print "Lighthouse Pizza / Smashburger\n";
-print "PKI\n";
-print "Faithfully / Journey\n";
-print "I am an avid frolfer and soccer player\n";
+
+my $fullname = 'Marcus Mallum';
+my $username = 'mmmallum';
+my $major = 'Computer Science/Computer Engineering';
+my $restaurant = 'Lighthouse Pizza / Smashburger';
+my $favPlace = 'PKI';
+my $music = 'Faithfully / Journey';
+my $other = 'I am an avid frolfer and soccer player';
+
 
