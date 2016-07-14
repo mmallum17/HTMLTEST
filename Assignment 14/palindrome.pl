@@ -30,6 +30,6 @@ if($first ~~ $seventh && $second ~~ $sixth && $third ~~ $fifth)
 }
 else
 {
-    print "NOT A PALINDROME\n";
+    print "NOT A PALINDROME!\n";
 }
 say "";
