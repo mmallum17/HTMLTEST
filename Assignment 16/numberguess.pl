@@ -47,3 +47,4 @@ while($input != $target)
         print "Your guesses so far: @attempts\n"
     }
 }
+say "";
