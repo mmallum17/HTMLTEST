@@ -7,6 +7,7 @@ my $input;
 my $large;
 my $small;
 my $average;
+my $sum = 0;
 my $count = 0;
 
 say "";
@@ -15,6 +16,7 @@ chomp($input = <>);
 
 while ($input >= 0)
 {
+    $sum += $input;
     if($count == 0)
     {
         $large = $input;
@@ -39,6 +41,7 @@ if($count == 0)
 }
 else
 {
+    $average = $sum / $count;
     print "$large:$small:$average\n";
 }
 say "";
