@@ -12,6 +12,7 @@ my $target = (int rand 100) + 1;
 my @attempts;
 my $input = -1;
 $" = ", ";
+
 while($input != $target)
 {
     print "Enter guess #" . ($#attempts + 2) . ": ";
