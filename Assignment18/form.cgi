@@ -1,7 +1,7 @@
 #!/usr/bin/perl
-use strict;
-use warnings FATAL => 'all';
 use Modern::Perl;
+use strict;
+use warnings;
 use Mail::Sendmail;
 use CGI qw/:standard/;
 use CGI::Carp qw/fatalsToBrowser/;
@@ -13,24 +13,41 @@ my $mailFrom    =  param('from');
 my $subjectLine =  param('subject');
 my $message     =  param('message');
 my %mail = ( To      => $mailTo,
-             From    => $mailFrom,
-             Subject => $subjectLine,
-             Message => $message,   # must be a string, not an array
-             'Content-Type' => 'text/plain');
+    From    => $mailFrom,
+    Subject => $subjectLine,
+    Message => $message,
+    'Content-Type' => 'text/plain');
 
-if ( sendmail %mail )
+if ( (sendmail %mail) && !($subjectLine ~~ /^\s*$/) && !($message ~~ /^\s*$/))
 {
-    print "Congratulations, we have sent e-mail to $mailTo from $mailFrom!";
+    print p("Congratulations, we have sent e-mail to $mailTo from $mailFrom!");
+    print a(
+            { -href => "javascript:history.back()"},
+            "Back to website"
+        );
 }
 else
 {
-    print "You need a valid from address.";
-    print "You need a valid to address.";
-    print "You need to enter a subject";
-    print "You need to enter a message";
+    if(!($mailFrom ~~ /.+\@.+\..+/))
+    {
+        print p({-style => "color: red"},"You need a valid from address.");
+    }
+    if(!($mailTo ~~  /.+\@.+\..+/))
+    {
+        print p({-style => "color: red"}, "You need a valid to address.");
+    }
+    if($subjectLine ~~ /^\s*$/)
+    {
+        print p({-style => "color: red"}, "You need to enter a subject.");
+    }
+    if($message ~~ /^\s*$/)
+    {
+        print p({-style => "color: red"}, "You need to enter a message");
+    }
     print a(
             { -href => "javascript:history.back()"},
-            "Go back and fill in everything"
-            );
+            "Go back and fix your errors"
+        );
 }
 print end_html;
+

@@ -124,6 +124,11 @@ section.information td:hover
     text-align: center;
 }
 
+/* This modifies how the form is displayed */
+#form
+{
+    padding-top: 15px;
+}
 
 /* This modifies how the images are displayed */
 img
