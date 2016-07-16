@@ -5,13 +5,18 @@
     <title>Form Testing</title>
 </head>
 <body>
-    <form action="test.cgi" method="get">
-        <input type="checkbox" name="one">
-        <input type="checkbox" name="two" value="blah">
-        <input type="checkbox" name="three" checked>
-        <input type="checkbox" name="four" required>
-        <input type="checkbox" name="five" disabled checked>
-        <br><input type="submit" name="sbutton" value="Go" style="color: blue; background-color: yellow; font-weight: bold;">
+    <form action="email.cgi" method="post">
+        <select name="movie" size="3" multiple>
+            <optgroup label="Top 3">
+                <option>Avatar</option><option>Titanic</option>
+                <option>The Dark Knight</option>
+            </optgroup>
+            <optgroup label="Next 2">
+                <option>Star Wars</option>
+                <option>Shrek 2</option>
+            </optgroup>
+        </select><br>
+        <input type="submit" name="sbutton" value="Press Me" style="color: blue; background-color: yellow; font-weight: bold;">
         <input type="reset" value="Reset this form!">
     </form>
 </body>

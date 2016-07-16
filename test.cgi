@@ -1,10 +1,20 @@
 #!/usr/bin/perl
-
-use CGI qw/:standard/;
 use Modern::Perl;
-print header();
-print start_html( -title=>'Page Generated with CGI.pm!' );
-print h1( 'Hey look, this is a heading!' );
-print 'More body text goes here.';
-print end_html();
+use strict;
+use warnings;
+use CGI qw/:standard/;
+use CGI::Carp qw/fatalsToBrowser/;
+
+print header(), start_html();
+my @thing    = param('movie'); # could be a list!
+$" = ", ";
+if ( !@thing ) {
+    print p( "No movies were selected!" );
+}
+else {
+    print p("The movie(s) were @thing");
+}
+
+
+print end_html;
 
