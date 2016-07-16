@@ -3,43 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>LectureTest</title>
-    <style type="text/css">
-        p{
-            color: teal;
-            font-family: "Palatino Linotype";
+    <style>
+        :required
+        {
+            border: 2px solid #0000ff;
         }
     </style>
 </head>
 <body>
-    <p style="color: rgba(0,128,128,1); font-family: 'Palatino Linotype';">
-        Here is a table!  Behold the awesomeness!
+    <p>
+        Hello, here is our sample form:
     </p>
-    <table border = "">
-        <colgroup>
-            <col style="background-color: yellow;" />
-            <col span="2" style="background-color: cyan;" />
-        </colgroup>
-        <caption>Top 3 Worldwide Box Office</caption>
-        <tr>
-            <th>Title</th>
-            <th>Year</th>
-            <th>Worldwide B.O.</th>
-        </tr>
-        <tr>
-            <td>Avatar</td>
-            <td>2009</td>
-            <td>$2.8B</td>
-        </tr>
-        <tr>
-            <td>Titanic</td>
-            <td>1997</td>
-            <td>$2.2B</td>
-        </tr>
-        <tr>
-            <td>The Avengers</td>
-            <td>2012</td>
-            <td>$1.5B</td>
-        </tr>
-    </table>
+    <form action="echo.cgi" method="post">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="email" name="addy"><br>
+        ZIP Code: <input type="text" placeholder="00000-0000" name="zip" required><br>
+        State: <input type="text" name="state" maxlength="2" size="2"><br>
+        Phone: <input type="tel" name="phone"><br>
+        Search: <input type="search" name="search"><br>
+        URL: <input type="url" name="urladdy"><br>
+        Date: <input type="date" name="when"><br>
+        Month: <input type="month" name="m"><br>
+        Week: <input type="week" name="wk"><br>
+        Time: <input type="time" name="time"><br>
+        Color: <input type="color" name="pretty"><br>
+        Enter a password: <input type="password" name="pwd" maxlength="15" required><br>
+        Enter your comment: <br>
+        <textarea name="comments" rows="10" cols="20" readonly>TEST</textarea><br>
+        <select name="movie" size="3" multiple>
+            <optgroup label="Top 3">
+                <option>Avatar</option><option>Titanic</option>
+                <option>The Dark Knight</option>
+            </optgroup>
+            <optgroup label="Next 2">
+                <option>Star Wars</option>
+                <option>Shrek 2</option>
+            </optgroup>
+        </select><br>
+        <input type="radio" name="one" required value="ch1"> A <br>
+        <input type="radio" name="one" value="ch2"> B <br>
+        <input type="radio" name="one" value="ch3"> C <br>
+        <input type="radio" name="one" value="ch4"> D <br>
+        <input type="checkbox" name="one"> This is the first box <br>
+        <label><input type="checkbox" name="two" value="blah">
+        This is the second box.</label><br>
+        <input type="checkbox" name="three" checked><br>
+        <input type="checkbox" name="four" required><br>
+        <input type="checkbox" name="five" disabled checked><br>
+        <input type="submit" name="sbutton" value="Press Me" style="color: blue; background-color: yellow; font-weight: bold;">
+        <input type="reset" value="Reset this form!">
+    </form>
+    <p>
+        Thanks for looking at our form.
+    </p>
 </body>
 </html>
