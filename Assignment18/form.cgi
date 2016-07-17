@@ -18,7 +18,7 @@ my %mail = ( To      => $mailTo,
     Message => $message,
     'Content-Type' => 'text/plain');
 
-if ( (sendmail %mail) && !($subjectLine ~~ /^\s*$/) && !($message ~~ /^\s*$/))
+if ( (sendmail %mail) && !($subjectLine ~~ /^\s*$/) && !($message ~~ /^\s*$/) && ($mailFrom ~~ /.+\@.+\..+/) && ($mailTo ~~ /.+\@.+\..+/))
 {
     print p("Congratulations, we have sent e-mail to $mailTo from $mailFrom!");
     print a(
