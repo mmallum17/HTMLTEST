@@ -95,7 +95,7 @@ section.information td:hover
 }
 
 /* This modifies the first sections of each page */
-#aboutMe, #quotes, #schedule, #addMessages
+#aboutMe, #quotes, #schedule
 {
     width: 60%;
     float: left;
@@ -103,12 +103,26 @@ section.information td:hover
 }
 
 /* This modifies the second sections of each page */
-#education, #htmlExample, #links, #viewMessages
+#education, #htmlExample, #links
 {
     width: 28%;
     margin-left: 62%;
 }
 
+/* This modifies the view messages section */
+#addMessages
+{
+    width: 30%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+/* This modifies the add messages section */
+#viewMessages
+{
+    width: 60%;
+    margin-left: 70%;
+}
 /* This modifies the third sections of each page */
 #recreation, #videos
 {
