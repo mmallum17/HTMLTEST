@@ -43,5 +43,37 @@
             </li>
         </ul>
     </nav>
+
+    <!-- this is the form (add message) section -->
+    <section class="information" id="addMessages">
+        <form action="addMessage.cgi" method="post">
+            <h1>
+                Add Message
+            </h1>
+            Enter your name:<br>
+            <input type="text" name="name" size="30" placeholder="John Doe" required/><br>
+            <br>Enter your message:<br>
+            <textarea name="message" rows="10" cols="40" placeholder="Enter message here" required></textarea><br>
+            <br><input type="submit" name="submit" value="Add Message">
+            <input type="reset" name="reset" value="Start Over">
+        </form>
+    </section>
+
+    <!-- this is the form (view messages) section -->
+    <section class="information" id="viewMessages">
+        <form action="viewMessages.cgi" method="post">
+            <h1>
+                View Messages
+            </h1>
+            <br><input type="submit" name="submit" value="VIEW MESSAGES">
+        </form>
+    </section>
+
+
+
+    <!-- The footer -->
+    <footer>
+        Copyright: 2016
+    </footer>
 </body>
 </html>

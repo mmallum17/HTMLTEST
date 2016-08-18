@@ -95,7 +95,7 @@ section.information td:hover
 }
 
 /* This modifies the first sections of each page */
-#aboutMe, #quotes, #schedule
+#aboutMe, #quotes, #schedule, #addMessages
 {
     width: 60%;
     float: left;
@@ -103,7 +103,7 @@ section.information td:hover
 }
 
 /* This modifies the second sections of each page */
-#education, #htmlExample, #links
+#education, #htmlExample, #links, #viewMessages
 {
     width: 28%;
     margin-left: 62%;
